@@ -13,7 +13,7 @@ body {
 .navbar1 {
     display: flex;
     background-color: #7E102C;
-    padding: 55px;
+    padding: 50px;
     align-items: center;
     justify-content: flex-end; 
     width: 100%;
@@ -25,15 +25,15 @@ a {
     margin-right: 8vw;
 }
 
-/* Kleuren nog bekijken
-/* a:hover{
-    color: #58423F
+/* Kleuren nog bekijken*/
+ a:hover{
+    color: #DEC163
     ;
 }
 
 .active {
-     color: #58423F ; 
-} */ 
+     color: #DEC163 ; 
+}  
 
 
 .footer {
@@ -42,4 +42,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    background-color: #7E102C;
+    padding: 40px;
+    width: 100%;
 }
