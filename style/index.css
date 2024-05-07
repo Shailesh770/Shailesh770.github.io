@@ -17,7 +17,6 @@
     box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 5px , rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform-style: preserve-3d;
     perspective: 1000px;
-    
 }
 .right-img{
     border-radius: 50px;
@@ -26,6 +25,49 @@
     box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 5px , rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform-style: preserve-3d;
     perspective: 1000px;
-    
 }
 
+/* Creëer een container voor de welkomsttekst */
+/* Centreren van de welkomsttekst */
+.welcome-container {
+    text-align: center; 
+    position: absolute; /* Stel de positie in op absoluut om bovenaan het midden te plaatsen */
+    top: 5.5vw; /* Plaats de container 50 pixels vanaf de bovenkant */
+    left: 50%; /* Plaats de container in het midden van de pagina */
+    transform: translateX(-50%); /* Verplaats de container naar links met 50% van zijn eigen breedte */
+}
+
+/* Aanpassingen aan de grootte van de welkomsttekst */
+.welcome-text {
+    display: inline-block; 
+    font-size: 80px; 
+    position: relative; 
+    animation: pop 1.2s ease-in-out forwards; 
+    color: white;
+}
+
+/* Aanpassingen aan de strepen */
+.welcome-text:before,
+.welcome-text:after {
+    content: ''; 
+    position: absolute; 
+    width: 100%; 
+    height: 2.5px;
+    background-color: #7E102C;
+    top: -10px; 
+    left: 0; 
+}
+
+.welcome-text:after {
+    top: 100%; 
+}
+
+/* Animatie-definitie */
+@keyframes pop {
+    0% {
+        transform: scale(0); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
