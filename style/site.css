@@ -46,7 +46,6 @@ nav ul li a {
 a.active,
 a:hover {
     color: #DEC163;
-    /* Verander de achtergrondkleur bij hover of actieve link */
 }
 
 .logo {
